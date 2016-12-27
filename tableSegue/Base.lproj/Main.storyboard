@@ -59,6 +59,10 @@
                                                 <constraint firstItem="5eX-K7-ZhH" firstAttribute="top" secondItem="o6i-6v-2Dx" secondAttribute="topMargin" constant="-57" id="nOZ-7R-gTA"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="thumbImage" destination="5eX-K7-ZhH" id="9oH-J8-TxH"/>
+                                            <outlet property="videoLabel" destination="bHr-Lx-hPS" id="zHS-Xb-ORH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
