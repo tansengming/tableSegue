@@ -62,6 +62,7 @@
                                         <connections>
                                             <outlet property="thumbImage" destination="5eX-K7-ZhH" id="9oH-J8-TxH"/>
                                             <outlet property="videoLabel" destination="bHr-Lx-hPS" id="zHS-Xb-ORH"/>
+                                            <segue destination="FEh-cC-gSH" kind="show" id="1Oa-Pb-aFy"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -82,6 +83,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="36" y="38.23088455772114"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="4ts-x7-C7O">
+            <objects>
+                <viewController id="FEh-cC-gSH" customClass="VideoVC" customModule="tableSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tBB-u0-jJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hgb-Oi-akv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gJt-kX-UPG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBS-fv-9x4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eBS-fv-9x4" firstAttribute="top" secondItem="gJt-kX-UPG" secondAttribute="top" id="BWg-vb-aNz"/>
+                            <constraint firstAttribute="trailing" secondItem="eBS-fv-9x4" secondAttribute="trailing" id="yjU-eP-CUd"/>
+                            <constraint firstItem="eBS-fv-9x4" firstAttribute="leading" secondItem="gJt-kX-UPG" secondAttribute="leading" id="zF9-yF-gZ7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="VideoView" destination="eBS-fv-9x4" id="kKk-Bx-cHR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0M-pF-GgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="37.331334332833585"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2637D3391E1319650050743E /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637D3381E1319650050743E /* VideoVC.swift */; };
 		265DBF151E12D0C50088942E /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DBF141E12D0C50088942E /* PartyCell.swift */; };
 		26CD1CF11E0D9B9A001C3181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD1CF01E0D9B9A001C3181 /* AppDelegate.swift */; };
 		26CD1CF31E0D9B9A001C3181 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD1CF21E0D9B9A001C3181 /* MainVC.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2637D3381E1319650050743E /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		265DBF141E12D0C50088942E /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
 		26CD1CED1E0D9B9A001C3181 /* tableSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CD1CF01E0D9B9A001C3181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				26CD1CF21E0D9B9A001C3181 /* MainVC.swift */,
+				2637D3381E1319650050743E /* VideoVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2637D3391E1319650050743E /* VideoVC.swift in Sources */,
 				26CD1CF31E0D9B9A001C3181 /* MainVC.swift in Sources */,
 				26CD1CF11E0D9B9A001C3181 /* AppDelegate.swift in Sources */,
 				265DBF151E12D0C50088942E /* PartyCell.swift in Sources */,
