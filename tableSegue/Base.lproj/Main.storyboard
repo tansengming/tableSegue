@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="72" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWb-pQ-eYf" id="o6i-6v-2Dx">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_nIu8KHX" translatesAutoresizingMaskIntoConstraints="NO" id="5eX-K7-ZhH">
@@ -100,15 +100,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCN-mH-8Wh">
+                                <rect key="frame" x="0.0" y="368" width="375" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="uB4-ug-qPF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cCN-mH-8Wh" firstAttribute="leading" secondItem="gJt-kX-UPG" secondAttribute="leading" id="9zO-f1-Aff"/>
                             <constraint firstItem="eBS-fv-9x4" firstAttribute="top" secondItem="gJt-kX-UPG" secondAttribute="top" id="BWg-vb-aNz"/>
+                            <constraint firstAttribute="trailing" secondItem="cCN-mH-8Wh" secondAttribute="trailing" id="GEZ-vq-GiJ"/>
+                            <constraint firstItem="Hgb-Oi-akv" firstAttribute="top" secondItem="cCN-mH-8Wh" secondAttribute="bottom" id="hNq-QL-HGB"/>
                             <constraint firstAttribute="trailing" secondItem="eBS-fv-9x4" secondAttribute="trailing" id="yjU-eP-CUd"/>
                             <constraint firstItem="eBS-fv-9x4" firstAttribute="leading" secondItem="gJt-kX-UPG" secondAttribute="leading" id="zF9-yF-gZ7"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="VideoLabel" destination="cCN-mH-8Wh" id="rLm-yx-TLs"/>
                         <outlet property="VideoView" destination="eBS-fv-9x4" id="kKk-Bx-cHR"/>
                     </connections>
                 </viewController>

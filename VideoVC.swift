@@ -10,12 +10,14 @@ import UIKit
 
 class VideoVC: UIViewController {
     @IBOutlet weak var VideoView: UIWebView!
+    @IBOutlet weak var VideoLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         VideoView.loadHTMLString("https://google.com", baseURL: nil)
+        VideoLabel.text = "Label!!!"
     }
 
     /*
