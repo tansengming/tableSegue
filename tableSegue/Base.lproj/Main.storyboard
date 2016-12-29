@@ -62,7 +62,7 @@
                                         <connections>
                                             <outlet property="thumbImage" destination="5eX-K7-ZhH" id="9oH-J8-TxH"/>
                                             <outlet property="videoLabel" destination="bHr-Lx-hPS" id="zHS-Xb-ORH"/>
-                                            <segue destination="FEh-cC-gSH" kind="show" id="1Oa-Pb-aFy"/>
+                                            <segue destination="FEh-cC-gSH" kind="showDetail" identifier="VideoVC" action="showViewController:sender:" id="1Oa-Pb-aFy"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -96,9 +96,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBS-fv-9x4">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBS-fv-9x4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="vJR-aB-2G1"/>
+                                </constraints>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCN-mH-8Wh">
                                 <rect key="frame" x="0.0" y="368" width="375" height="299"/>
@@ -113,11 +116,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cCN-mH-8Wh" firstAttribute="leading" secondItem="gJt-kX-UPG" secondAttribute="leading" id="9zO-f1-Aff"/>
-                            <constraint firstItem="eBS-fv-9x4" firstAttribute="top" secondItem="gJt-kX-UPG" secondAttribute="top" id="BWg-vb-aNz"/>
                             <constraint firstAttribute="trailing" secondItem="cCN-mH-8Wh" secondAttribute="trailing" id="GEZ-vq-GiJ"/>
+                            <constraint firstAttribute="trailing" secondItem="eBS-fv-9x4" secondAttribute="trailing" id="II1-Vu-kXf"/>
+                            <constraint firstItem="eBS-fv-9x4" firstAttribute="leading" secondItem="gJt-kX-UPG" secondAttribute="leading" id="Q4g-Y4-Le7"/>
                             <constraint firstItem="Hgb-Oi-akv" firstAttribute="top" secondItem="cCN-mH-8Wh" secondAttribute="bottom" id="hNq-QL-HGB"/>
-                            <constraint firstAttribute="trailing" secondItem="eBS-fv-9x4" secondAttribute="trailing" id="yjU-eP-CUd"/>
-                            <constraint firstItem="eBS-fv-9x4" firstAttribute="leading" secondItem="gJt-kX-UPG" secondAttribute="leading" id="zF9-yF-gZ7"/>
+                            <constraint firstItem="eBS-fv-9x4" firstAttribute="top" secondItem="gJt-kX-UPG" secondAttribute="top" id="zNa-d9-lZa"/>
                         </constraints>
                     </view>
                     <connections>

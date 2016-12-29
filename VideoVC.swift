@@ -16,7 +16,8 @@ class VideoVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        VideoView.loadHTMLString("https://google.com", baseURL: nil)
+        let embed = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/km2OPUctni4\" frameborder=\"0\" allowfullscreen></iframe>"
+        VideoView.loadHTMLString(embed, baseURL: nil)
         VideoLabel.text = "Label!!!"
     }
 
