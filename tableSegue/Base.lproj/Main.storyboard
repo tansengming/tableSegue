@@ -112,14 +112,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXC-r6-ddf">
+                                <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Back"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="pDo-Vo-EMv"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="FEh-cC-gSH" eventType="touchUpInside" id="ARa-aY-H0Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jXC-r6-ddf" firstAttribute="top" secondItem="gJt-kX-UPG" secondAttribute="top" id="0Aw-rs-DcH"/>
+                            <constraint firstItem="jXC-r6-ddf" firstAttribute="leading" secondItem="eBS-fv-9x4" secondAttribute="leading" id="2ys-MA-jbd"/>
                             <constraint firstItem="cCN-mH-8Wh" firstAttribute="leading" secondItem="gJt-kX-UPG" secondAttribute="leading" id="9zO-f1-Aff"/>
                             <constraint firstAttribute="trailing" secondItem="cCN-mH-8Wh" secondAttribute="trailing" id="GEZ-vq-GiJ"/>
                             <constraint firstAttribute="trailing" secondItem="eBS-fv-9x4" secondAttribute="trailing" id="II1-Vu-kXf"/>
                             <constraint firstItem="eBS-fv-9x4" firstAttribute="leading" secondItem="gJt-kX-UPG" secondAttribute="leading" id="Q4g-Y4-Le7"/>
                             <constraint firstItem="Hgb-Oi-akv" firstAttribute="top" secondItem="cCN-mH-8Wh" secondAttribute="bottom" id="hNq-QL-HGB"/>
+                            <constraint firstItem="jXC-r6-ddf" firstAttribute="top" secondItem="eBS-fv-9x4" secondAttribute="top" id="yyH-Hv-v2u"/>
                             <constraint firstItem="eBS-fv-9x4" firstAttribute="top" secondItem="gJt-kX-UPG" secondAttribute="top" constant="50" id="zNa-d9-lZa"/>
                         </constraints>
                     </view>

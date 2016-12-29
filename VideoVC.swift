@@ -32,6 +32,10 @@ class VideoVC: UIViewController {
         VideoLabel.text = "Label!!!"
     }
 
+    @IBAction func backBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+
     /*
     // MARK: - Navigation
 
