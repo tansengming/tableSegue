@@ -62,7 +62,6 @@
                                         <connections>
                                             <outlet property="thumbImage" destination="5eX-K7-ZhH" id="9oH-J8-TxH"/>
                                             <outlet property="videoLabel" destination="bHr-Lx-hPS" id="zHS-Xb-ORH"/>
-                                            <segue destination="FEh-cC-gSH" kind="showDetail" identifier="VideoVC" action="showViewController:sender:" id="1Oa-Pb-aFy"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -78,6 +77,7 @@
                     </view>
                     <connections>
                         <outlet property="mainTable" destination="xo6-C4-VdH" id="ahx-9p-pjb"/>
+                        <segue destination="FEh-cC-gSH" kind="showDetail" identifier="VideoVC" id="O2w-a1-k19"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
