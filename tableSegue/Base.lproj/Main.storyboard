@@ -120,7 +120,7 @@
                             <constraint firstAttribute="trailing" secondItem="eBS-fv-9x4" secondAttribute="trailing" id="II1-Vu-kXf"/>
                             <constraint firstItem="eBS-fv-9x4" firstAttribute="leading" secondItem="gJt-kX-UPG" secondAttribute="leading" id="Q4g-Y4-Le7"/>
                             <constraint firstItem="Hgb-Oi-akv" firstAttribute="top" secondItem="cCN-mH-8Wh" secondAttribute="bottom" id="hNq-QL-HGB"/>
-                            <constraint firstItem="eBS-fv-9x4" firstAttribute="top" secondItem="gJt-kX-UPG" secondAttribute="top" id="zNa-d9-lZa"/>
+                            <constraint firstItem="eBS-fv-9x4" firstAttribute="top" secondItem="gJt-kX-UPG" secondAttribute="top" constant="50" id="zNa-d9-lZa"/>
                         </constraints>
                     </view>
                     <connections>
