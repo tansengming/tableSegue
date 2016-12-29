@@ -12,12 +12,24 @@ class VideoVC: UIViewController {
     @IBOutlet weak var VideoView: UIWebView!
     @IBOutlet weak var VideoLabel: UILabel!
 
+    var _embedHtml: String!
+
+    var embedHtml: String! {
+        get {
+            return _embedHtml
+        }
+
+        set {
+            _embedHtml = newValue
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let embed = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/km2OPUctni4\" frameborder=\"0\" allowfullscreen></iframe>"
-        VideoView.loadHTMLString(embed, baseURL: nil)
+        embedHtml = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/km2OPUctni4\" frameborder=\"0\" allowfullscreen></iframe>"
+        VideoView.loadHTMLString(embedHtml, baseURL: nil)
         VideoLabel.text = "Label!!!"
     }
 
